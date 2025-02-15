@@ -4,7 +4,6 @@ var React21 = require('react');
 var clsx = require('clsx');
 var tailwindMerge = require('tailwind-merge');
 var chrono = require('chrono-node');
-var CollapsiblePrimitive = require('@radix-ui/react-collapsible');
 var reactTable = require('@tanstack/react-table');
 var ahooks = require('ahooks');
 var antd = require('antd');
@@ -44,7 +43,6 @@ function _interopNamespace(e) {
 
 var React21__namespace = /*#__PURE__*/_interopNamespace(React21);
 var chrono__namespace = /*#__PURE__*/_interopNamespace(chrono);
-var CollapsiblePrimitive__namespace = /*#__PURE__*/_interopNamespace(CollapsiblePrimitive);
 var dayjs2__default = /*#__PURE__*/_interopDefault(dayjs2);
 var ___default = /*#__PURE__*/_interopDefault(_);
 var Link__default = /*#__PURE__*/_interopDefault(Link);
@@ -190,9 +188,6 @@ function useIsMobile() {
   }, []);
   return !!isMobile;
 }
-var Collapsible = CollapsiblePrimitive__namespace.Root;
-var CollapsibleTrigger2 = CollapsiblePrimitive__namespace.CollapsibleTrigger;
-var CollapsibleContent2 = CollapsiblePrimitive__namespace.CollapsibleContent;
 var { defaultAlgorithm, darkAlgorithm, useToken } = antd.theme;
 var useAppTheme = () => {
   const { token } = useToken();
@@ -3146,9 +3141,6 @@ var useTableStyles = () => {
   }))();
 };
 
-exports.Collapsible = Collapsible;
-exports.CollapsibleContent = CollapsibleContent2;
-exports.CollapsibleTrigger = CollapsibleTrigger2;
 exports.ColumnDropDown = ColumnDropDown;
 exports.EAmount = EAmount;
 exports.EButton = EButton;

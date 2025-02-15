@@ -3,7 +3,6 @@ import React21__default, { forwardRef, Fragment, useState, useRef, useImperative
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import * as chrono from 'chrono-node';
-import * as CollapsiblePrimitive from '@radix-ui/react-collapsible';
 import { flexRender, useReactTable, getFacetedMinMaxValues, getFacetedUniqueValues, getFacetedRowModel, getExpandedRowModel, getGroupedRowModel, getSortedRowModel, getFilteredRowModel, getPaginationRowModel, getCoreRowModel, createColumnHelper } from '@tanstack/react-table';
 import { useRequest, useSafeState, useUpdateEffect } from 'ahooks';
 import { theme, Flex, Select, Input, Tabs, Radio, Space, InputNumber, Skeleton as Skeleton$1, Typography, Button, Popover, Checkbox, Tooltip, Image, Divider, ConfigProvider, DatePicker, Spin } from 'antd';
@@ -161,9 +160,6 @@ function useIsMobile() {
   }, []);
   return !!isMobile;
 }
-var Collapsible = CollapsiblePrimitive.Root;
-var CollapsibleTrigger2 = CollapsiblePrimitive.CollapsibleTrigger;
-var CollapsibleContent2 = CollapsiblePrimitive.CollapsibleContent;
 var { defaultAlgorithm, darkAlgorithm, useToken } = theme;
 var useAppTheme = () => {
   const { token } = useToken();
@@ -3117,6 +3113,6 @@ var useTableStyles = () => {
   }))();
 };
 
-export { Collapsible, CollapsibleContent2 as CollapsibleContent, CollapsibleTrigger2 as CollapsibleTrigger, ColumnDropDown, EAmount, EButton, EButtonGroup, EButtonTransparent, ECheckbox, EDatePicker, EDivider, EDividerWithNoStyle, EDividerWithText, EEmail, EFullDivider, EGstNo, EHeading, EIcon, EIconButton, EIconButtonIcon, ELatitude, ELoader, ENoobButton, EPan, EParagraph, EPinCode, EPopover, EPrimaryIcon, ETab, EText, ETextForSearchFilterDropDown, ETextForSearchFilterLabel, EThirdPartyLogInButtonProps, ETooltip, EditableCell, EditableRow, FilterDropDown, Header, IndeterminateCheckbox, InternalTable, MainLoader, MemoizedCell, MemoizedTableBody, NoData, NoobTanstackTable, PAGINATION_PAGE_SIZE_OPTIONS, PageLoader, ProAmount, ProAmountField, ProDatePicker, ProDigitNumber, ProWeightNumber, ShadcnTable, ShadcnTableBody, ShadcnTableCaption, ShadcnTableCell, ShadcnTableFooter, ShadcnTableHead, ShadcnTableHeader, ShadcnTableRow, ShakeButton, ShakeButtonWrapper, Skeleton, SortableColumns, SortableHeader, TableBody, TableClearButton, TableDeleteButton, TableInput, TanstackGlobalFilter, TanstackTableEmpty, TanstackTablePagination, TanstackTableRowSelection, TanstackToolbar, TextWithIcon, VerticalText, VirtualTableBody, getBordered, getCellSize, getColumnAggregation, getExtraColumns, getHiddenColumns, getRowIds, getSelectedRowModel, handlePinColumn, isCheckAll, isIndeterminate, useIsMobile, useTableStyles, useTanstackTable };
+export { ColumnDropDown, EAmount, EButton, EButtonGroup, EButtonTransparent, ECheckbox, EDatePicker, EDivider, EDividerWithNoStyle, EDividerWithText, EEmail, EFullDivider, EGstNo, EHeading, EIcon, EIconButton, EIconButtonIcon, ELatitude, ELoader, ENoobButton, EPan, EParagraph, EPinCode, EPopover, EPrimaryIcon, ETab, EText, ETextForSearchFilterDropDown, ETextForSearchFilterLabel, EThirdPartyLogInButtonProps, ETooltip, EditableCell, EditableRow, FilterDropDown, Header, IndeterminateCheckbox, InternalTable, MainLoader, MemoizedCell, MemoizedTableBody, NoData, NoobTanstackTable, PAGINATION_PAGE_SIZE_OPTIONS, PageLoader, ProAmount, ProAmountField, ProDatePicker, ProDigitNumber, ProWeightNumber, ShadcnTable, ShadcnTableBody, ShadcnTableCaption, ShadcnTableCell, ShadcnTableFooter, ShadcnTableHead, ShadcnTableHeader, ShadcnTableRow, ShakeButton, ShakeButtonWrapper, Skeleton, SortableColumns, SortableHeader, TableBody, TableClearButton, TableDeleteButton, TableInput, TanstackGlobalFilter, TanstackTableEmpty, TanstackTablePagination, TanstackTableRowSelection, TanstackToolbar, TextWithIcon, VerticalText, VirtualTableBody, getBordered, getCellSize, getColumnAggregation, getExtraColumns, getHiddenColumns, getRowIds, getSelectedRowModel, handlePinColumn, isCheckAll, isIndeterminate, useIsMobile, useTableStyles, useTanstackTable };
 //# sourceMappingURL=index.mjs.map
 //# sourceMappingURL=index.mjs.map
