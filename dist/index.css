@@ -1,0 +1,32 @@
+/* src/components/customIntegration/Tanstack/table.css */
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: transparent;
+  cursor: col-resize;
+  touch-action: none;
+  z-index: 10;
+}
+.resizer:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.resizer.isResizing {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+* {
+  user-select: none;
+}
+.table-wrapper {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  contain: content;
+}
+.table-container {
+  overflow-x: clip;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */

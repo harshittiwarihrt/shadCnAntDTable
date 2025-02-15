@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "react",
+    "declaration": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./src", // This is the crucial part!  Relative to tsconfig.json
+    "paths": {
+      "~/components/*": ["components/*"], // Example alias for components
+      "~/utils/*": ["libs/*"], // Example alias for utils
+      "~/styles/*": ["styles/*"], // Example alias for styles
+      // Add more aliases as needed
+      "~/theme": ["theme/index.tsx"],
+      "~/assets/*": ["assets/*"]
+    }
+  },
+  "include": ["src", "theme"],
+  "exclude": ["node_modules", "dist"]
+}
