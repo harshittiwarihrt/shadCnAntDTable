@@ -1,0 +1,38 @@
+.resizer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: transparent;
+  cursor: col-resize;
+  touch-action: none;
+  z-index: 10;
+}
+
+.resizer:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.resizer.isResizing {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  /* Prevent text selection during resize */
+  user-select: none;
+}
+
+/* Optimize paint operations */
+.table-wrapper {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  contain: content;
+}
+
+/* Optional: Add this to your table wrapper to prevent horizontal scroll jump during resize */
+.table-container {
+  overflow-x: clip;
+  width: 100%;
+}
